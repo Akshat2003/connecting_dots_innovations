@@ -74,9 +74,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <a href="/" className="flex items-center mb-6">
-              <div className="mr-2 w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
+              {/* <div className="mr-2 w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
                 AIB
-              </div>
+              </div> */}
               <span className="font-bold text-xl tracking-tight">
                 Connecting Dots Innovations
               </span>

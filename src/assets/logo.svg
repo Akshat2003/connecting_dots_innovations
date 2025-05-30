@@ -1,0 +1,42 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dot-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14e0d9"/>
+      <stop offset="40%" stop-color="#3d8bfd"/>
+      <stop offset="70%" stop-color="#9f3fff"/>
+      <stop offset="100%" stop-color="#cf33ff"/>
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14e0d9"/>
+      <stop offset="100%" stop-color="#9f3fff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Network Icon (Dots + Connecting Lines) -->
+  <g filter="url(#glow)">
+    <!-- Lines -->
+    <line x1="65" y1="120" x2="105" y2="50" stroke="url(#dot-gradient)" stroke-width="4"/>
+    <line x1="105" y1="50" x2="175" y2="60" stroke="url(#dot-gradient)" stroke-width="4"/>
+    <line x1="105" y1="50" x2="95" y2="110" stroke="url(#dot-gradient)" stroke-width="4"/>
+    <line x1="65" y1="120" x2="95" y2="110" stroke="url(#dot-gradient)" stroke-width="4"/>
+    <line x1="95" y1="110" x2="140" y2="130" stroke="url(#dot-gradient)" stroke-width="4"/>
+    <!-- Dots -->
+    <circle cx="65" cy="120" r="10" fill="url(#dot-gradient)"/>
+    <circle cx="105" cy="50" r="10" fill="url(#dot-gradient)"/>
+    <circle cx="175" cy="60" r="10" fill="url(#dot-gradient)"/>
+    <circle cx="95" cy="110" r="10" fill="url(#dot-gradient)"/>
+    <circle cx="140" cy="130" r="10" fill="url(#dot-gradient)"/>
+  </g>
+  <!-- Logo Text -->
+  <g>
+    <text x="170" y="90" font-family="Montserrat, Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#text-gradient)">CONNECTING</text>
+    <text x="170" y="128" font-family="Montserrat, Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#text-gradient)">DOTS</text>
+    <text x="170" y="165" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="bold" fill="url(#text-gradient)" letter-spacing="5">INNOVATIONS</text>
+  </g>
+</svg>
