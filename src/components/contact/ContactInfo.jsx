@@ -132,7 +132,7 @@ const ContactInfoItem = ({ icon: Icon, title, details, link, linkLabel, copyText
 
 const ContactInfo = () => {
   const phoneNumber = "+919926446622";
-  const emailAddress = "aibinnovations@gmail.com";
+  const emailAddress = "akshatj205@gmail.com";
 
   // Email composition parameters
   const emailParams = {
