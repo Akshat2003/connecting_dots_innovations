@@ -1,22 +1,29 @@
-import { Users } from 'lucide-react';
-import { NeuButton } from '../ui/NeuButton';
+import { Users } from "lucide-react";
+import { NeuButton } from "../ui/NeuButton";
 
 const AboutHeroSection = ({ scrollY, mousePosition }) => {
   return (
-    <section id="about-hero" className="relative pt-20 pb-0 md:pt-32 md:pb-20 overflow-hidden min-h-screen flex flex-col justify-center">
+    <section
+      id="about-hero"
+      className="relative pt-20 pb-0 md:pt-32 md:pb-20 overflow-hidden min-h-screen flex flex-col justify-center"
+    >
       <div className="container mx-auto px-4 md:px-6">
         {/* Mobile and tablet layout */}
         <div className="md:hidden flex flex-col items-center">
           {/* Text content - centered */}
           <div className="w-full text-center">
             <h1 className="text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-300 to-white">
-              About <span className="text-indigo-400">AIB Innovations</span>
+              About{" "}
+              <span className="text-indigo-400">
+                Connecting Dots Innovations
+              </span>
             </h1>
             <p className="text-base text-slate-300 mb-8 max-w-md mx-auto leading-relaxed">
-              Founded in 2018, AIB Innovations has been at the forefront of 
-              technology integration, combining cutting-edge software development 
-              with innovative hardware solutions. Our mission is to create 
-              technology that empowers businesses and transforms industries.
+              Founded in 2018, Connecting Dots Innovations has been at the
+              forefront of technology integration, combining cutting-edge
+              software development with innovative hardware solutions. Our
+              mission is to create technology that empowers businesses and
+              transforms industries.
             </p>
             <div className="flex flex-col gap-4 w-full max-w-md mx-auto mb-12">
               <NeuButton className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-[0_4px_14px_rgba(79,70,229,0.4)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.6)]">
@@ -30,7 +37,7 @@ const AboutHeroSection = ({ scrollY, mousePosition }) => {
               </a>
             </div>
           </div>
-          
+
           {/* Company Logo/Graphic */}
           <div className="w-full">
             <div className="relative w-full max-w-xs mx-auto aspect-square">
@@ -51,36 +58,40 @@ const AboutHeroSection = ({ scrollY, mousePosition }) => {
             </div>
           </div>
         </div>
-        
+
         {/* Desktop layout */}
         <div className="hidden md:flex md:flex-row md:items-center">
           <div className="md:w-1/2 md:pr-12 text-left">
-            <h1 
+            <h1
               className="text-5xl lg:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-300 to-white"
-              style={{ 
+              style={{
                 transform: `translateY(${Math.max(0, 50 - scrollY / 5)}px)`,
-                opacity: Math.max(0, 1 - scrollY / 300)
+                opacity: Math.max(0, 1 - scrollY / 300),
               }}
             >
-              About <span className="text-indigo-400">AIB Innovations</span>
+              About{" "}
+              <span className="text-indigo-400">
+                Connecting Dots Innovations
+              </span>
             </h1>
-            <p 
+            <p
               className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed"
-              style={{ 
+              style={{
                 transform: `translateY(${Math.max(0, 70 - scrollY / 4)}px)`,
-                opacity: Math.max(0, 1 - scrollY / 400)
+                opacity: Math.max(0, 1 - scrollY / 400),
               }}
             >
-              Founded in 2018, AIB Innovations has been at the forefront of 
-              technology integration, combining cutting-edge software development 
-              with innovative hardware solutions. Our mission is to create 
-              technology that empowers businesses and transforms industries.
+              Founded in 2018, Connecting Dots Innovations has been at the
+              forefront of technology integration, combining cutting-edge
+              software development with innovative hardware solutions. Our
+              mission is to create technology that empowers businesses and
+              transforms industries.
             </p>
-            <div 
+            <div
               className="flex flex-row gap-4"
-              style={{ 
+              style={{
                 transform: `translateY(${Math.max(0, 90 - scrollY / 3)}px)`,
-                opacity: Math.max(0, 1 - scrollY / 500)
+                opacity: Math.max(0, 1 - scrollY / 500),
               }}
             >
               <NeuButton className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-[0_4px_14px_rgba(79,70,229,0.4)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.6)]">
@@ -94,11 +105,11 @@ const AboutHeroSection = ({ scrollY, mousePosition }) => {
               </a>
             </div>
           </div>
-          <div 
+          <div
             className="md:w-1/2 relative"
-            style={{ 
+            style={{
               transform: `translateY(${Math.max(0, 30 - scrollY / 6)}px)`,
-              opacity: Math.max(0, 1 - scrollY / 300)
+              opacity: Math.max(0, 1 - scrollY / 300),
             }}
           >
             {/* Company Logo/Graphic */}
